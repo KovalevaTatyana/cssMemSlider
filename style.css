@@ -86,3 +86,56 @@ body {
 #check-5:checked ~ .container__slider-slide .container__slider_item {
     transform: translateX(-400%);
 }
+#check-1:checked ~ .container__slider-pagination [for='check-1'],
+#check-2:checked ~ .container__slider-pagination [for='check-2'],
+#check-3:checked ~ .container__slider-pagination [for='check-3'],
+#check-4:checked ~ .container__slider-pagination [for='check-4'],
+#check-5:checked ~ .container__slider-pagination [for='check-5']
+{
+  background: blue;
+}
+@media (min-width: 320px) and (max-width: 567px) {
+    .container__slider_block {
+        max-width: 90vw;
+        padding: 45% 0 12%;
+    }
+    .container__slider_item__txt {
+        font-size: 1.2rem;
+        margin-top: 20%;
+        align-self: center;
+        margin-bottom: 5%;
+    }
+    .container__slider-pagination {
+        width: 100%;
+        margin-top: -35%;
+        padding-bottom: 20%;
+        justify-content: center;
+    }
+    .container__slider-pagination label {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+}
+@media (min-width: 568px) and (max-width: 1024px) {
+    .container__slider_block {
+        max-width: 55vw;
+        padding: 5% 0 17%;
+    }
+    .container__slider_item__txt {
+        font-size: 1rem;
+        margin-top: 11%;
+        align-self: center;
+        margin-bottom: 3%;
+    }
+    .container__slider-pagination {
+        width: 100%;
+        margin-top: -25%;
+        padding-bottom: 5%;
+        justify-content: center;
+        width: 101%;
+    }
+    .container__slider-pagination label {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+}
